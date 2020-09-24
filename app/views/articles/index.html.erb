@@ -1,5 +1,3 @@
-<h1>List of articles:</h1>
-
 <% @articles.each do |article| %>
 
 <h2>
@@ -8,6 +6,10 @@
 
 <p>
    <%= article.text %>
+</p>
+
+<p>
+   <%= link_to  'Show article', article_path(article) %> | <%= link_to  'Edit article', edit_article_path(article) %>	
 </p>
 
 <hr />
